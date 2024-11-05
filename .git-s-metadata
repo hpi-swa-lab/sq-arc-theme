@@ -1,0 +1,15 @@
+GSMetadata {
+	#version : 1,
+	#mappers : [
+		GSTonelMapper {
+			#version : 1,
+			#package : MCPackage {
+				#name : 'ArcTheme'
+			},
+			#path : FSAbsolutePath [
+				'src'
+			]
+		}
+	],
+	#name : 'sq-arc-theme'
+}
