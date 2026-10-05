@@ -581,3 +581,12 @@ ArcDarkTheme class >> create [
 		
 		theme]
 ]
+
+{
+	#category : #'initialize-release',
+	#'squeak_changestamp' : 'ct 10/5/2026 22:24'
+}
+ArcDarkTheme class >> initialize [
+
+	self create.
+]
