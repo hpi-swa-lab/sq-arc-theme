@@ -11,6 +11,17 @@ Class {
 }
 
 {
+	#category : #'instance creation',
+	#'squeak_changestamp' : 'ct 10/8/2026 21:11'
+}
+ArcTheme class >> addToolIcons: theme [
+	"Tool-specific icons."
+
+	theme 
+		set: #genericClass for: #ToolIcons to: self genericClass.
+]
+
+{
 	#category : #'window boxes',
 	#'squeak_changestamp' : 'ct 10/8/2026 20:28'
 }
@@ -35,6 +46,21 @@ ArcTheme class >> collapseBoxImage [
 ArcTheme class >> expandBoxImage [
 
 	^ self makeBoxOfColor: (Color r: 0.426 g: 0.762 b: 0.401)
+]
+
+{
+	#category : #'tool icons',
+	#'squeak_changestamp' : 'ct 10/8/2026 21:19'
+}
+ArcTheme class >> genericClass [
+
+	| font |
+	font := StrikeFont familyName: 'Bitmap DejaVu Sans' pointSize: 7 pt.
+	^ (FormCanvas extent: 15.5 px @ 15.5 px depth: 32) in: [:canvas |
+		canvas asBalloonCanvas
+			aaLevel: 4;
+			drawString: 'C' at: 15.5 px @ 15.5 px - ((font widthOf: $C) @ font ascent) // 2 font: font color: Color lightGray.
+		canvas form]
 ]
 
 {
@@ -92,7 +118,7 @@ ArcTheme class >> menuBoxImage [
 
 {
 	#category : #'private - display scale',
-	#'squeak_changestamp' : 'ct 10/8/2026 21:44'
+	#'squeak_changestamp' : 'ct 10/8/2026 21:28'
 }
 ArcTheme >> setScaleFactor: aFloat [
 
@@ -107,4 +133,6 @@ ArcTheme >> setScaleFactor: aFloat [
 		set: #menuBoxImage for: #SystemWindow to: self class menuBoxImage.
 	self
 		set: #closeBoxImage for: #MenuMorph to: self class closeBoxImage.
+	self
+		set: #genericClass for: #ToolIcons to: self class genericClass.
 ]

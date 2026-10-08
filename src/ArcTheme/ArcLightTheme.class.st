@@ -552,7 +552,7 @@ ArcLightTheme class >> addWindowColors: theme [
 
 {
 	#category : #'instance creation',
-	#'squeak_changestamp' : 'tobe 5/15/2024 15:21'
+	#'squeak_changestamp' : 'ct 10/8/2026 21:11'
 }
 ArcLightTheme class >> create [
 	"This is the default theme for Squeak.
@@ -580,6 +580,7 @@ ArcLightTheme class >> create [
 			addButtons: theme;
 			addScrollables: theme;
 			addToolColors: theme;
+			addToolIcons: theme;
 			addMVC: theme.
 		
 		theme]
