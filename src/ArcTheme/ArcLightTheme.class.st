@@ -178,7 +178,7 @@ ArcLightTheme class >> addMVC: theme [
 
 {
 	#category : #'instance creation',
-	#'squeak_changestamp' : 'ct 10/8/2026 20:56'
+	#'squeak_changestamp' : 'ct 10/8/2026 22:51'
 }
 ArcLightTheme class >> addMenusAndDockingBars: theme [
 
@@ -212,7 +212,8 @@ ArcLightTheme class >> addMenusAndDockingBars: theme [
 		derive: #borderColor for: #DockingBarMorph from: #MenuMorph;
 		derive: #borderStyle for: #DockingBarMorph from: #MenuMorph;
 		"derive: #color for: #DockingBarMorph from: #MenuMorph;"
-		set: #color for: #DockingBarMorph to: (Color transparent);
+		"set: #color for: #DockingBarMorph to: (Color transparent);"
+		derive: #color for: #DockingBarMorph from: #MorphicProject at: #background;
 	
 		derive: #lineColor for: #DockingBarMorph from: #MenuMorph;
 		derive: #lineStyle for: #DockingBarMorph from: #MenuMorph;
