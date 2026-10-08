@@ -1,6 +1,6 @@
 # Squeak Arc Theme
 
-New, experimental UI theme for Squeak, designed by Tom Beckmann ([@tom95](https://github.com/tom95)).
+New minimalistic UI theme for Squeak, designed by Tom Beckmann ([@tom95](https://github.com/tom95)). Experimental.
 
 <picture>
  <source media="(prefers-color-scheme: light)" srcset="./screenshots/combined-alt.png">
