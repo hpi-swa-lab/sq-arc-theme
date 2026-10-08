@@ -1,10 +1,19 @@
 GSMetadata {
 	#version : 1,
-	#mappers : [
+	#mappers : OrderedCollection [
 		GSTonelMapper {
 			#version : 1,
 			#package : MCPackage {
 				#name : 'ArcTheme'
+			},
+			#path : FSAbsolutePath [
+				'src'
+			]
+		},
+		GSTonelMapper {
+			#version : 1,
+			#package : MCPackage {
+				#name : 'BaselineOfArcTheme'
 			},
 			#path : FSAbsolutePath [
 				'src'
