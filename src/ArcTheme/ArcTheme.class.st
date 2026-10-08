@@ -19,3 +19,12 @@ ArcTheme class >> githubRepositoryParams [
 
 	^ {'hpi-swa-lab'. 'sq-arc-theme'. 'src'}
 ]
+
+{
+	#category : #testing,
+	#'squeak_changestamp' : 'ct 10/8/2026 20:43'
+}
+ArcTheme class >> isAbstract [
+
+	^ self == ArcTheme
+]

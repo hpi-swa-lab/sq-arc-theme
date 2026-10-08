@@ -1,6 +1,6 @@
 Class {
 	#name : #ArcLightTheme,
-	#superclass : #UserInterfaceTheme,
+	#superclass : #ArcTheme,
 	#category : #ArcTheme
 }
 
