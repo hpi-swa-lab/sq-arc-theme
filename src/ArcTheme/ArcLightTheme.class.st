@@ -233,7 +233,7 @@ ArcLightTheme class >> addMenusAndDockingBars: theme [
 
 {
 	#category : #'instance creation',
-	#'squeak_changestamp' : 'tobe 5/15/2024 15:31'
+	#'squeak_changestamp' : 'ct 10/9/2026 01:30'
 }
 ArcLightTheme class >> addScrollables: theme [
 	"self create apply"
@@ -269,6 +269,7 @@ ArcLightTheme class >> addScrollables: theme [
 		set: #selectionColor for: #PluggableListMorph to: (self accent);
 		derive: #multiSelectionColor for: #PluggableListMorph from: #PluggableListMorph at: #selectionColor do: [:c | c lighter];
 		set: #selectionTextColor for: #PluggableListMorph to: (Color white);
+		set: #singleSelectionTextColor for: #PluggableListMorph to: Color black;
 		set: #filterColor for: #PluggableListMorph to: Color yellow paler;
 		set: #filterTextColor for: #PluggableListMorph to: Color black;
 		set: #preSelectionModifier for: #PluggableListMorph to: [ [:c | Color gray: 0.1] ];
