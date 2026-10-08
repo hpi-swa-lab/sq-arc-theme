@@ -1,7 +1,7 @@
 Extension { #name : #UserInterfaceTheme }
 
 {
-	#category : #'*ArcTheme-initialize-release(-pseudo)-override',
+	#category : #'*ArcTheme-initialize-release-override',
 	#'squeak_changestamp' : 'ct 10/8/2026 21:29'
 }
 UserInterfaceTheme class >> cleanUp: aggressive [
@@ -13,7 +13,7 @@ UserInterfaceTheme class >> cleanUp: aggressive [
 ]
 
 {
-	#category : #'*ArcTheme-private - display scale(-pseudo)-override',
+	#category : #'*ArcTheme-private - display scale-override',
 	#'squeak_changestamp' : 'ct 10/8/2026 21:26'
 }
 UserInterfaceTheme >> copyWithScaleFactor: aFloat [

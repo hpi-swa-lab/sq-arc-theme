@@ -1,7 +1,7 @@
 Extension { #name : #ToolIcons }
 
 {
-	#category : #'*ArcTheme-accessing(-pseudo)-override',
+	#category : #'*ArcTheme-accessing-override',
 	#'squeak_changestamp' : 'ct 10/8/2026 21:45'
 }
 ToolIcons class >> iconNamed: aSymbol [
@@ -12,7 +12,7 @@ ToolIcons class >> iconNamed: aSymbol [
 ]
 
 {
-	#category : #'*ArcTheme-buttons(-pseudo)-override',
+	#category : #'*ArcTheme-buttons-override',
 	#'squeak_changestamp' : 'ct 10/8/2026 21:46'
 }
 ToolIcons class >> keyboardButtonLabeled: anObject dyed: aColor [

@@ -1,7 +1,7 @@
 Extension { #name : #MenuMorph }
 
 {
-	#category : #'*ArcTheme-construction(-pseudo)-override',
+	#category : #'*ArcTheme-construction-override',
 	#'squeak_changestamp' : 'ct 10/8/2026 21:22'
 }
 MenuMorph >> addStayUpIcons [
@@ -40,7 +40,7 @@ MenuMorph >> addStayUpIcons [
 ]
 
 {
-	#category : #'*ArcTheme-preferences(-pseudo)-override',
+	#category : #'*ArcTheme-preferences-override',
 	#'squeak_changestamp' : 'ct 10/8/2026 20:54'
 }
 MenuMorph class >> themeProperties [

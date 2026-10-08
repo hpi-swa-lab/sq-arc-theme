@@ -1,7 +1,7 @@
 Extension { #name : #SystemWindow }
 
 {
-	#category : #'*ArcTheme-initialization(-pseudo)-override',
+	#category : #'*ArcTheme-initialization-override',
 	#'squeak_changestamp' : 'ct 10/8/2026 21:23'
 }
 SystemWindow >> createBox: aForm [
