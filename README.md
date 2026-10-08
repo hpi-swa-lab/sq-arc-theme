@@ -7,21 +7,16 @@ New minimalistic UI theme for Squeak, designed by Tom Beckmann ([@tom95](https:/
  <source media="(prefers-color-scheme: dark)" srcset="./screenshots/combined.png">
  <img alt="Arc theme" src="./screenshots/combined.png">
 </picture>
-<table>
-	<colgroup>
-		<col width="33.33%">
-		<col width="33.33%">
-		<col width="33.33%">
-	</colgroup>
+<table width="100%">
 	<tr>
-		<th>Light</th>
-		<th>Light (Colorful)</th>
-		<th>Dark</th>
+		<th width="33.33%">Light</th>
+		<th width="33.33%">Light (Colorful)</th>
+		<th width="33.33%">Dark</th>
 	</tr>
 	<tr>
-		<td><a href="./screenshots/light.png"><img src="./screenshots/light.png" alt="Arc theme (light)"></a></td>
-		<td><a href="./screenshots/light-colorful.png"><img src="./screenshots/light-colorful.png" alt="Arc theme (light, with colorful windows)"></a></td>
-		<td><a href="./screenshots/dark.png"><img src="./screenshots/dark.png" alt="Arc theme (dark)"></a></td>
+		<td><a href="./screenshots/light.png"><img src="./screenshots/light.png" alt="Arc theme (light)" width="100%"></a></td>
+		<td><a href="./screenshots/light-colorful.png"><img src="./screenshots/light-colorful.png" alt="Arc theme (light, with colorful windows)" width="100%"></a></td>
+		<td><a href="./screenshots/dark.png"><img src="./screenshots/dark.png" alt="Arc theme (dark)" width="100%"></a></td>
 	</tr>
 </table>
 
