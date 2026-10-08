@@ -178,7 +178,7 @@ ArcLightTheme class >> addMVC: theme [
 
 {
 	#category : #'instance creation',
-	#'squeak_changestamp' : 'tobe 5/14/2024 17:32'
+	#'squeak_changestamp' : 'ct 10/8/2026 20:56'
 }
 ArcLightTheme class >> addMenusAndDockingBars: theme [
 
@@ -224,6 +224,10 @@ ArcLightTheme class >> addMenusAndDockingBars: theme [
 		derive: #textColor for: #TheWorldMainDockingBar from: #MenuItemMorph;
 		set: #logoColor for: #TheWorldMainDockingBar to: Color black;
 		set: #selectionLogoColor for: #TheWorldMainDockingBar to: Color white.
+	
+	"Menu boxes."
+	theme
+		derive: #closeBoxImage for: #MenuMorph from: #SystemWindow.
 ]
 
 {
@@ -492,7 +496,7 @@ ArcLightTheme class >> addToolColors: theme [
 
 {
 	#category : #'instance creation',
-	#'squeak_changestamp' : 'tobe 5/15/2024 07:42'
+	#'squeak_changestamp' : 'ct 10/8/2026 20:55'
 }
 ArcLightTheme class >> addWindowColors: theme [
 
@@ -537,6 +541,13 @@ ArcLightTheme class >> addWindowColors: theme [
 		set: #customWindowColor for: #TestRunner to: (Color r: 0.9 g: 0.576 b: 0.09);
 		set: #customWindowColor for: #TranscriptStream to: (Color r: 0.9 g: 0.75 b: 0.45);
 		set: #customWindowColor for: #VersionsBrowser to: (Color r: 0.782 g: 0.677 b: 0.9).
+	
+	"Window boxes."
+	theme
+		set: #closeBoxImage for: #SystemWindow to: self closeBoxImage;
+		set: #collapseBoxImage for: #SystemWindow to: self collapseBoxImage;
+		set: #expandBoxImage for: #SystemWindow to: self expandBoxImage;
+		set: #menuBoxImage for: #SystemWindow to: self menuBoxImage.
 ]
 
 {
