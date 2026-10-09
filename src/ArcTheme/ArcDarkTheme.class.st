@@ -233,7 +233,7 @@ ArcDarkTheme class >> addMenusAndDockingBars: theme [
 
 {
 	#category : #'instance creation',
-	#'squeak_changestamp' : 'tobe 5/15/2024 15:30'
+	#'squeak_changestamp' : 'ct 10/10/2026 00:12'
 }
 ArcDarkTheme class >> addScrollables: theme [
 	"self create apply"
@@ -307,6 +307,8 @@ ArcDarkTheme class >> addScrollables: theme [
 	theme
 		set: #balloonTextColor for: #PluggableTextMorphPlus to: (Color gray: 0.7);
 		derive: #balloonTextFont for: #PluggableTextMorphPlus from: #PluggableTextMorph at: #font.
+	theme
+		derive: #codeBackgroundColor for: #PBPreferenceButtonMorph from: #Model at: #uniformWindowColor.
 ]
 
 {
