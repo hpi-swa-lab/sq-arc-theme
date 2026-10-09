@@ -39,12 +39,25 @@ UserInterfaceTheme >> copyWithScaleFactor: aFloat [
 
 {
 	#category : #'*ArcTheme-initialize-release(-pseudo)-override',
-	#'squeak_changestamp' : 'ct 10/5/2026 22:51'
+	#'squeak_changestamp' : 'ct 10/10/2026 00:42'
 }
 UserInterfaceTheme class >> createAll [
 
-	self isAbstract ifFalse: [self create].
-	self subclassesDo: [:ea | ea createAll].
+	| themeClasses |
+	self isAbstract ifFalse: [^ self create].
+	
+	themeClasses := self withAllSubclasses reject: [:ea | ea isAbstract].
+	themeClasses := themeClasses topologicallySortedUsing: [:a :b | (a dependsOn: b) not].
+	themeClasses do: [:ea | ea createAll].
+]
+
+{
+	#category : #'*ArcTheme-initialize-release(-pseudo)-override',
+	#'squeak_changestamp' : 'ct 10/10/2026 00:41'
+}
+UserInterfaceTheme class >> dependsOn: aThemeClass [
+
+	^ false
 ]
 
 {
