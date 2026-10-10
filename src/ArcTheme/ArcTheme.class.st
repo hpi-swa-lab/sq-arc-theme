@@ -50,16 +50,16 @@ ArcTheme class >> expandBoxImage [
 
 {
 	#category : #'tool icons',
-	#'squeak_changestamp' : 'ct 10/8/2026 21:19'
+	#'squeak_changestamp' : 'ct 10/10/2026 22:13'
 }
 ArcTheme class >> genericClass [
 
 	| font |
-	font := StrikeFont familyName: 'Bitmap DejaVu Sans' pointSize: 7 pt.
-	^ (FormCanvas extent: 15.5 px @ 15.5 px depth: 32) in: [:canvas |
+	font := StrikeFont familyName: 'Bitmap DejaVu Sans' pointSize: 9 px.
+	^ (FormCanvas extent: 12 px @ 12 px depth: 32) in: [:canvas |
 		canvas asBalloonCanvas
 			aaLevel: 4;
-			drawString: 'C' at: 15.5 px @ 15.5 px - ((font widthOf: $C) @ font ascent) // 2 font: font color: Color lightGray.
+			drawString: 'C' at: 12 px @ 12 px - ((font widthOf: $C) @ font ascent) // 2 font: font color: Color lightGray.
 		canvas form]
 ]
 
