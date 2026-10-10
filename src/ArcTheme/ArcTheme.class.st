@@ -74,6 +74,16 @@ ArcTheme class >> githubRepositoryParams [
 ]
 
 {
+	#category : #'initialize-release',
+	#'squeak_changestamp' : 'ct 10/10/2026 22:01'
+}
+ArcTheme class >> initialize [
+
+	ArcLightTheme create.
+	ArcDarkTheme create. "depends on light theme"
+]
+
+{
 	#category : #testing,
 	#'squeak_changestamp' : 'ct 10/8/2026 20:43'
 }
