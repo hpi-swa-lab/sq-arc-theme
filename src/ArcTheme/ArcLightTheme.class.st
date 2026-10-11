@@ -233,7 +233,7 @@ ArcLightTheme class >> addMenusAndDockingBars: theme [
 
 {
 	#category : #'instance creation',
-	#'squeak_changestamp' : 'mad 10/11/2026 21:56'
+	#'squeak_changestamp' : 'mad 10/11/2026 22:50'
 }
 ArcLightTheme class >> addScrollables: theme [
 	"self create apply"
@@ -259,6 +259,7 @@ ArcLightTheme class >> addScrollables: theme [
 	theme
 		set: #borderColorModifier for: #ScrollPane to: [ [:c | c adjustBrightness: -0.07] ];
 		set: #borderWidth for: #ScrollPane to: 1;
+		set: #keyboardFocusWidth for: ScrollPane to: 1;
 		set: #borderStyle for: #ScrollPane to: BorderStyle simple;
 		set: #color for: #ScrollPane to: Color transparent.
 		
