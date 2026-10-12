@@ -461,20 +461,20 @@ ArcDarkTheme class >> addSyntaxHighlighting: theme [
 
 {
 	#category : #'instance creation',
-	#'squeak_changestamp' : 'tobe 5/14/2024 16:42'
+	#'squeak_changestamp' : 'ct 10/12/2026 20:22'
 }
 ArcDarkTheme class >> addToolColors: theme [
 	"Tool-specific colors."
 	
 	"SUnit's TestRunner."
 	theme 
-		set: #failureColor for: #TestRunner to: (Color r: 0.958 g: 0.751 b: 0.356);
-		set: #errorColor for: #TestRunner to: (Color r: 0.952 g: 0.405 b: 0.393);
-		set: #passColor for: #TestRunner to: (Color r: 0.426 g: 0.762 b: 0.401);
+		set: #failureColor for: #TestRunner to: ((Color r: 0.958 g: 0.751 b: 0.356) arcWithLightness: 0.5);
+		set: #errorColor for: #TestRunner to: ((Color r: 0.952 g: 0.405 b: 0.393) arcWithLightness: 0.5);
+		set: #passColor for: #TestRunner to: ((Color r: 0.426 g: 0.762 b: 0.401) arcWithLightness: 0.5);
 		
-		derive: #failureTextColor for: #TestRunner from: #PluggableTextMorph at: #textColor;
-		derive: #errorTextColor for: #TestRunner from: #PluggableTextMorph at: #textColor;
-		derive: #passTextColor for: #TestRunner from: #PluggableTextMorph at: #textColor.
+		set: #failureTextColor for: #TestRunner to: Color black;
+		set: #errorTextColor for: #TestRunner to: Color black;
+		set: #passTextColor for: #TestRunner to: Color black.
 		
 	"Monticello Tools."
 	theme
