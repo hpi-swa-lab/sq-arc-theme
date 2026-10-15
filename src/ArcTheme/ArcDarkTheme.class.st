@@ -233,7 +233,7 @@ ArcDarkTheme class >> addMenusAndDockingBars: theme [
 
 {
 	#category : #'instance creation',
-	#'squeak_changestamp' : 'ct 10/10/2026 00:12'
+	#'squeak_changestamp' : 'mad 10/11/2026 22:58'
 }
 ArcDarkTheme class >> addScrollables: theme [
 	"self create apply"
@@ -257,8 +257,10 @@ ArcDarkTheme class >> addScrollables: theme [
 	
 	"Scroll panes (includes generic stuff for list widgets, tree widgets, and text widgets."
 	theme
-		set: #borderColor for: #ScrollPane to: (Color transparent);
-		set: #borderWidth for: #ScrollPane to: 0;
+		set: #borderColorModifier for: #ScrollPane to: [ [:c | c adjustBrightness: 0.07] ];
+		set: #borderAsOverlay for: #ScrollPane to: false;
+		set: #borderWidth for: #ScrollPane to: 1;
+		set: #keyboardFocusWidth for: ScrollPane to: 1;
 		set: #borderStyle for: #ScrollPane to: BorderStyle simple;
 		set: #color for: #ScrollPane to: (Color transparent).
 		
