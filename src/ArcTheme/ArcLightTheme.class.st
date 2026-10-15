@@ -454,7 +454,7 @@ ArcLightTheme class >> addSyntaxHighlighting: theme [
 
 {
 	#category : #'instance creation',
-	#'squeak_changestamp' : 'tobe 5/14/2024 16:42'
+	#'squeak_changestamp' : 'ct 10/15/2026 17:23'
 }
 ArcLightTheme class >> addToolColors: theme [
 	"Tool-specific colors."
@@ -486,7 +486,7 @@ ArcLightTheme class >> addToolColors: theme [
 	"Code-browsing tools."
 	theme
 		set: #noClassCommentColor for: #Browser to: Color red;
-		set: #deprecatedMessageAttributes for: #CodeHolder to: { TextEmphasis struckOut. TextColor gray }.
+		set: #deprecatedMessageAttributes for: #CodeHolder to: { TextEmphasis struckOut. TextColor color: Color gray twiceLighter }.
 
 	"Objects Tool."
 	theme

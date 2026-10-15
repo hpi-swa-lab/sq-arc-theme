@@ -461,7 +461,7 @@ ArcDarkTheme class >> addSyntaxHighlighting: theme [
 
 {
 	#category : #'instance creation',
-	#'squeak_changestamp' : 'ct 10/12/2026 20:22'
+	#'squeak_changestamp' : 'ct 10/15/2026 17:23'
 }
 ArcDarkTheme class >> addToolColors: theme [
 	"Tool-specific colors."
@@ -493,7 +493,7 @@ ArcDarkTheme class >> addToolColors: theme [
 	"Code-browsing tools."
 	theme
 		set: #noClassCommentColor for: #Browser to: Color red;
-		set: #deprecatedMessageAttributes for: #CodeHolder to: { TextEmphasis struckOut. TextColor gray }.
+		set: #deprecatedMessageAttributes for: #CodeHolder to: { TextEmphasis struckOut. TextColor color: Color gray thriceLighter }.
 
 	"Objects Tool."
 	theme
